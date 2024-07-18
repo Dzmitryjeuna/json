@@ -1,0 +1,225 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./fonts/bebasneuebold.woff2') format('woff2'),
+    url('./fonts/bebasneuebold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('./fonts/robotoflex-variable.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 650;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  line-height: normal;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+
+  font-family: 'Roboto Flex';
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+  font-variation-settings: "slnt" -10, "wdth" 66, "GRAD" 44, "XOPQ" 118,
+    "XTRA" 441, "YOPQ" 56, "YTAS" 750, "YTDE" -203, "YTFI" 753, "YTLC" 514,
+    "YTUC" 533;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+html:focus-within,
+:has(:target) {
+  scroll-behavior: smooth;
+}
+
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+p {
+  --paragraphMarginBottom: 18px;
+  margin-block: 0;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  background: #b5ee82 url(./img/sheet-bg.svg) no-repeat top center / cover;
+  /* background-size: auto */
+  border: #b5ee82 30px solid;
+  border-top: none;
+}
+
+.flex-base {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.sheet__header-label {
+  color: #21be49;
+  text-shadow: 5px 5px 0px #212121;
+  -webkit-text-stroke-width: 7px;
+  -webkit-text-stroke-color: #212121;
+  font-family: 'Bebas Neue';
+  font-size: 193px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -5.79px;
+}
+
+.sheet__header-label span {
+  color: #5ea8ff;
+  font-size: 193px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -5.79px;
+}
+
+.sheet__header-title {
+  color: #ed81a4;
+  text-shadow: 3px 3px 0px #212121;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #212121;
+  font-family: 'Roboto Flex';
+  font-size: 70px;
+  font-weight: 650;
+  text-transform: uppercase;
+  transform: rotate(-5deg);
+}
+
+.sheet__header-bg {
+  background: url(./img/title-bg.svg) no-repeat top center / auto;
+  padding-bottom: 30px;
+  padding-top: 26px;
+}
+
+.sheet__body {
+  border: 4px solid #212121;
+  background: #21be49 url(./img/sheet-bg-green.svg) no-repeat top center / cover;
+  padding: 35px 30px 20px;
+}
+
+.sheet__body-title {
+  color: #f28122;
+  text-align: center;
+  text-shadow: 4px 4px 0px #212121;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #212121;
+  font-family: 'Bebas Neue';
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.user,
+.user-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.user + .user {
+  margin-top: 40px;
+}
+
+.user-container {
+  flex-grow: 1;
+}
+
+.profile-pic {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  fill: #d9d9d9;
+  border: 4px solid #212121;
+  object-fit: cover;
+  object-position: 0 0;
+  vertical-align: baseline
+}
+
+.user-data .name {
+  color: #5ea8ff;
+  text-shadow: 2px 2px 0px #212121;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #212121;
+  font-size: 50px;
+}
+
+.user-data .messages {
+  color: #ed81a4;
+  text-align: right;
+  text-shadow: 2px 2px 0px #212121;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #212121;
+  font-family: 'Bebas Neue';
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.bar {
+  border: 3px solid #212121;
+  background: #a7e97c;
+  box-shadow: 2px 2px 0px 0px #000;
+  height: 38px;
+}
+
+.bar .fill {
+  height: 32px;
+  background-color: #5ea8ff;
+  width: 0%;
+  transition: width 1s ease;
+}
+
+.sheet__header-name {
+  color: #d5f98f;
+  text-align: right;
+  text-shadow: 3px 3px 0px #212121;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #212121;
+  font-family: 'Roboto Flex';
+  font-size: 70px;
+  margin-block: 15px;
+}

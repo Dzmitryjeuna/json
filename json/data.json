@@ -1,0 +1,56 @@
+{
+  "groupTitle": "Активист",
+  "groupName": "@group_name",
+  "users": [
+    {
+      "name": "Иван Иванов",
+      "messages": 100,
+      "profilePic": "img/avatar2.jpg"
+    },
+    {
+      "name": "Петр Петров",
+      "messages": 80,
+      "profilePic": "img/avatar2.jpg"
+    },
+    {
+      "name": "Сергей Сергеев",
+      "messages": 40,
+      "profilePic": "img/avatar2.jpg"
+    },
+    {
+      "name": "Анна Антонова",
+      "messages": 35,
+      "profilePic": "img/avatar2.jpg"
+    },
+    {
+      "name": "Елена Еленова",
+      "messages": 30,
+      "profilePic": "img/avatar2.jpg"
+    },
+    {
+      "name": "Дмитрий Дмитриев",
+      "messages": 25,
+      "profilePic": "img/avatar2.jpg"
+    },
+    {
+      "name": "Максим Максимов",
+      "messages": 20,
+      "profilePic": "img/avatar2.jpg"
+    },
+    {
+      "name": "Ольга Ольгова",
+      "messages": 15,
+      "profilePic": "img/avatar2.jpg"
+    },
+    {
+      "name": "Алексей Алексеев",
+      "messages": 10,
+      "profilePic": "img/avatar2.jpg"
+    },
+    {
+      "name": "Мария Маринова",
+      "messages": 5,
+      "profilePic": "img/avatar2.jpg"
+    }
+  ]
+}
